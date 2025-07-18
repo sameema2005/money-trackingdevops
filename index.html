@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Money Tracker</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 600px;
+      background: #fff;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .summary {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      gap: 1rem;
+    }
+
+    .card {
+      flex: 1;
+      background: #f0f0f0;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .card.income {
+      border-left: 5px solid green;
+    }
+
+    .card.expense {
+      border-left: 5px solid red;
+    }
+
+    .card.balance {
+      border-left: 5px solid #444;
+    }
+
+    .card p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .entries h2 {
+      margin-bottom: 1rem;
+    }
+
+    .entries ul {
+      list-style: none;
+    }
+
+    .entries li {
+      background: #fafafa;
+      padding: 0.8rem 1rem;
+      margin-bottom: 0.5rem;
+      border-left: 5px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 6px;
+    }
+
+    .entries li .income {
+      color: green;
+    }
+
+    .entries li .expense {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Money Tracker</h1>
+
+    <div class="summary">
+      <div class="card income">
+        <h3>Income</h3>
+        <p>₹10,000</p>
+      </div>
+      <div class="card expense">
+        <h3>Expense</h3>
+        <p>₹4,500</p>
+      </div>
+      <div class="card balance">
+        <h3>Balance</h3>
+        <p>₹5,500</p>
+      </div>
+    </div>
+
+    <div class="entries">
+      <h2>Transactions</h2>
+      <ul>
+        <li><span>Salary</span> <span class="income">+₹10,000</span></li>
+        <li><span>Groceries</span> <span class="expense">-₹2,000</span></li>
+        <li><span>Internet Bill</span> <span class="expense">-₹1,000</span></li>
+        <li><span>Freelance</span> <span class="income">+₹2,000</span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
